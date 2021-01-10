@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Switcher</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                text-align: center; 
+            }
+            section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 30px;
+}
+
+p{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 40px;
+}
+section .color1{
+    background-color:#f00;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+section .color2{
+    background-color:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+section .color3{
+    background-color:yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+section .color4{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+section .color5{
+    background-color:goldenrod;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+section .color6{
+    background-color:green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Color Scheme Switcher</h1>
+        <section class="box">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+            <div class="color6"></div>
+        </section>
+        <p>Try clicking on one of the colors above to change the background color of this page</p>
+     <script>
+     var body = document.querySelector("body");
+         var color1 = document.querySelector(".color1").addEventListener("click", () => {
+             body.style.background = "red";
+         })
+         var color2 = document.querySelector(".color2").addEventListener("click", () => {
+             body.style.background = "white";
+         })
+         var color3 = document.querySelector(".color3").addEventListener("click", () => {
+             body.style.background = "yellow";
+         })
+         var color4 = document.querySelector(".color4").addEventListener("click", () => {
+             body.style.background = "blue";
+         })
+         var color5 = document.querySelector(".color5").addEventListener("click", () => {
+             body.style.background = "goldenrod";
+         })
+         var color6 = document.querySelector(".color6").addEventListener("click", () => {
+             body.style.background = "green";
+         })
+     </script>
+    </body>
+</html>
+
